@@ -1,0 +1,3 @@
+/home/ben/Desktop/codingProjects/2ombies1/CMakeFiles/2ombies.dir
+/home/ben/Desktop/codingProjects/2ombies1/CMakeFiles/edit_cache.dir
+/home/ben/Desktop/codingProjects/2ombies1/CMakeFiles/rebuild_cache.dir
