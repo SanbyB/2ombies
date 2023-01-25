@@ -241,5 +241,6 @@ CMakeFiles/2ombies.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/ben/Desktop/codingProjects/2ombies1/include/sprite.h \
  /home/ben/Desktop/codingProjects/2ombies1/include/player.h \
+ /home/ben/Desktop/codingProjects/2ombies1/include/entity.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc

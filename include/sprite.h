@@ -12,6 +12,8 @@ class Sprite{
         */
         Sprite(std::string n, std::vector<int> s);
 
+        Sprite();
+
         ~Sprite();
 
         // returns current image of the sprite

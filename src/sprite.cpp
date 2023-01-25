@@ -24,6 +24,8 @@ Sprite::Sprite(std::string n, std::vector<int> s){
     pointer = {0, 0};
 }
 
+Sprite::Sprite(){}
+
 Sprite::~Sprite(){}
 
 

@@ -6,6 +6,7 @@ add_executable(${PROJECT_NAME}
 main.cpp
 src/sprite.cpp
 src/player.cpp
+src/entity.cpp
 )
 
 target_link_libraries (${PROJECT_NAME}

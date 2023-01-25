@@ -1,7 +1,7 @@
-CMakeFiles/2ombies.dir/src/player.cpp.o: \
- /home/ben/Desktop/codingProjects/2ombies1/src/player.cpp \
+CMakeFiles/2ombies.dir/src/entity.cpp.o: \
+ /home/ben/Desktop/codingProjects/2ombies1/src/entity.cpp \
  /usr/include/stdc-predef.h \
- /home/ben/Desktop/codingProjects/2ombies1/src/../include/player.h \
+ /home/ben/Desktop/codingProjects/2ombies1/src/../include/entity.h \
  /home/ben/Desktop/codingProjects/2ombies1/src/../include/sprite.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
@@ -241,5 +241,5 @@ CMakeFiles/2ombies.dir/src/player.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/ben/Desktop/codingProjects/2ombies1/src/../include/entity.h
+ /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/11/iostream \
+ /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc

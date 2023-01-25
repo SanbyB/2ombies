@@ -15,8 +15,8 @@ int main(){
     while (window.isOpen())
     {
         count++;
-        if(!(count%200)){
-            player.update();
+        if(!(count%300)){
+            player.updt();
         }
         sf::Event event;
         while (window.pollEvent(event))
