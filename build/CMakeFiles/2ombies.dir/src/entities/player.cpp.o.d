@@ -1,11 +1,14 @@
-CMakeFiles/2ombies.dir/main.cpp.o: \
- /home/ben/Desktop/codingProjects/2ombies1/main.cpp \
- /usr/include/stdc-predef.h /usr/include/SFML/Graphics.hpp \
- /usr/include/SFML/Window.hpp /usr/include/SFML/System.hpp \
- /usr/include/SFML/Config.hpp /usr/include/SFML/System/Clock.hpp \
- /usr/include/SFML/System/Export.hpp /usr/include/SFML/System/Time.hpp \
- /usr/include/SFML/System/Err.hpp /usr/include/c++/11/ostream \
- /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
+CMakeFiles/2ombies.dir/src/entities/player.cpp.o: \
+ /home/ben/Desktop/codingProjects/2ombies1/src/entities/player.cpp \
+ /usr/include/stdc-predef.h \
+ /home/ben/Desktop/codingProjects/2ombies1/src/entities/../../include/entities/player.h \
+ /home/ben/Desktop/codingProjects/2ombies1/src/entities/../../include/entities/../sprite.h \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
+ /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
+ /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
+ /usr/include/c++/11/ostream /usr/include/c++/11/ios \
+ /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -239,8 +242,4 @@ CMakeFiles/2ombies.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/ben/Desktop/codingProjects/2ombies1/include/sprite.h \
- /home/ben/Desktop/codingProjects/2ombies1/include/entities/player.h \
- /home/ben/Desktop/codingProjects/2ombies1/include/entities/entity.h \
- /usr/include/c++/11/iostream /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /home/ben/Desktop/codingProjects/2ombies1/src/entities/../../include/entities/entity.h

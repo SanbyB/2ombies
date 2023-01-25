@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "include/sprite.h"
-#include "include/player.h"
+#include "include/entities/player.h"
 #include <iostream>
 
 int main(){
@@ -16,7 +16,7 @@ int main(){
     {
         count++;
         if(!(count%300)){
-            player.updt();
+            player.update();
         }
         sf::Event event;
         while (window.pollEvent(event))

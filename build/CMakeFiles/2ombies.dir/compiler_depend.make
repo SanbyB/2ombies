@@ -299,15 +299,15 @@ CMakeFiles/2ombies.dir/main.cpp.o: ../main.cpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
   ../include/sprite.h \
-  ../include/player.h \
-  ../include/entity.h \
+  ../include/entities/player.h \
+  ../include/entities/entity.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc
 
-CMakeFiles/2ombies.dir/src/entity.cpp.o: ../src/entity.cpp \
+CMakeFiles/2ombies.dir/src/entities/entity.cpp.o: ../src/entities/entity.cpp \
   /usr/include/stdc-predef.h \
-  ../include/entity.h \
+  ../include/entities/entity.h \
   ../include/sprite.h \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Window.hpp \
@@ -608,9 +608,9 @@ CMakeFiles/2ombies.dir/src/entity.cpp.o: ../src/entity.cpp \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc
 
-CMakeFiles/2ombies.dir/src/player.cpp.o: ../src/player.cpp \
+CMakeFiles/2ombies.dir/src/entities/player.cpp.o: ../src/entities/player.cpp \
   /usr/include/stdc-predef.h \
-  ../include/player.h \
+  ../include/entities/player.h \
   ../include/sprite.h \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Window.hpp \
@@ -907,7 +907,7 @@ CMakeFiles/2ombies.dir/src/player.cpp.o: ../src/player.cpp \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
-  ../include/entity.h
+  ../include/entities/entity.h
 
 CMakeFiles/2ombies.dir/src/sprite.cpp.o: ../src/sprite.cpp \
   /usr/include/stdc-predef.h \
@@ -1212,15 +1212,11 @@ CMakeFiles/2ombies.dir/src/sprite.cpp.o: ../src/sprite.cpp \
   /usr/include/c++/11/bits/istream.tcc
 
 
-../src/entity.cpp:
-
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/istream:
 
-../include/entity.h:
-
-../include/player.h:
+../include/entities/entity.h:
 
 ../include/sprite.h:
 
@@ -1343,6 +1339,8 @@ CMakeFiles/2ombies.dir/src/sprite.cpp.o: ../src/sprite.cpp \
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/11/bits/localefwd.h:
+
+../src/entities/player.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -1528,6 +1526,8 @@ CMakeFiles/2ombies.dir/src/sprite.cpp.o: ../src/sprite.cpp \
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
+../include/entities/player.h:
+
 /usr/include/c++/11/unordered_map:
 
 /usr/include/SFML/System/Time.hpp:
@@ -1666,8 +1666,6 @@ CMakeFiles/2ombies.dir/src/sprite.cpp.o: ../src/sprite.cpp \
 
 /usr/include/c++/11/cerrno:
 
-../src/player.cpp:
-
 /usr/include/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -1691,6 +1689,8 @@ CMakeFiles/2ombies.dir/src/sprite.cpp.o: ../src/sprite.cpp \
 /usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/c++/11/system_error:
+
+../src/entities/entity.cpp:
 
 /usr/include/SFML/Window/Sensor.hpp:
 

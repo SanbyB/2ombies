@@ -1,4 +1,4 @@
-#include "../include/entity.h"
+#include "../../include/entities/entity.h"
 #include <iostream>
 
 Entity::Entity(){
@@ -10,7 +10,6 @@ Entity::~Entity(){
 
 sf::Sprite Entity::getSprite(){
     sf::Sprite s = sprite.image();
-    s.scale(3, 3);
     return s;
 }
 
@@ -19,6 +18,9 @@ void Entity::setSprite(std::string n, std::vector<int> s){
 }
 
 void Entity::update(int &count){
+    if(hp <= 0){
+        die();
+    }
     if(count == 0){
         sprite.Pointer(0, 0);
         count = 1;
@@ -35,4 +37,8 @@ void Entity::update(int &count){
         sprite.Pointer(1, 0);
         count = 0;
     }
+}
+
+void Entity::die(){
+    
 }

@@ -5,8 +5,8 @@ project(2ombies)
 add_executable(${PROJECT_NAME}
 main.cpp
 src/sprite.cpp
-src/player.cpp
-src/entity.cpp
+src/entities/player.cpp
+src/entities/entity.cpp
 )
 
 target_link_libraries (${PROJECT_NAME}

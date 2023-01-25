@@ -153,53 +153,53 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/entity.o: src/entity.cpp.o
-.PHONY : src/entity.o
+src/entities/entity.o: src/entities/entity.cpp.o
+.PHONY : src/entities/entity.o
 
 # target to build an object file
-src/entity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entity.cpp.o
-.PHONY : src/entity.cpp.o
+src/entities/entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/entity.cpp.o
+.PHONY : src/entities/entity.cpp.o
 
-src/entity.i: src/entity.cpp.i
-.PHONY : src/entity.i
+src/entities/entity.i: src/entities/entity.cpp.i
+.PHONY : src/entities/entity.i
 
 # target to preprocess a source file
-src/entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entity.cpp.i
-.PHONY : src/entity.cpp.i
+src/entities/entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/entity.cpp.i
+.PHONY : src/entities/entity.cpp.i
 
-src/entity.s: src/entity.cpp.s
-.PHONY : src/entity.s
+src/entities/entity.s: src/entities/entity.cpp.s
+.PHONY : src/entities/entity.s
 
 # target to generate assembly for a file
-src/entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entity.cpp.s
-.PHONY : src/entity.cpp.s
+src/entities/entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/entity.cpp.s
+.PHONY : src/entities/entity.cpp.s
 
-src/player.o: src/player.cpp.o
-.PHONY : src/player.o
+src/entities/player.o: src/entities/player.cpp.o
+.PHONY : src/entities/player.o
 
 # target to build an object file
-src/player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/player.cpp.o
-.PHONY : src/player.cpp.o
+src/entities/player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/player.cpp.o
+.PHONY : src/entities/player.cpp.o
 
-src/player.i: src/player.cpp.i
-.PHONY : src/player.i
+src/entities/player.i: src/entities/player.cpp.i
+.PHONY : src/entities/player.i
 
 # target to preprocess a source file
-src/player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/player.cpp.i
-.PHONY : src/player.cpp.i
+src/entities/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/player.cpp.i
+.PHONY : src/entities/player.cpp.i
 
-src/player.s: src/player.cpp.s
-.PHONY : src/player.s
+src/entities/player.s: src/entities/player.cpp.s
+.PHONY : src/entities/player.s
 
 # target to generate assembly for a file
-src/player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/player.cpp.s
-.PHONY : src/player.cpp.s
+src/entities/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/player.cpp.s
+.PHONY : src/entities/player.cpp.s
 
 src/sprite.o: src/sprite.cpp.o
 .PHONY : src/sprite.o
@@ -237,12 +237,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/entity.o"
-	@echo "... src/entity.i"
-	@echo "... src/entity.s"
-	@echo "... src/player.o"
-	@echo "... src/player.i"
-	@echo "... src/player.s"
+	@echo "... src/entities/entity.o"
+	@echo "... src/entities/entity.i"
+	@echo "... src/entities/entity.s"
+	@echo "... src/entities/player.o"
+	@echo "... src/entities/player.i"
+	@echo "... src/entities/player.s"
 	@echo "... src/sprite.o"
 	@echo "... src/sprite.i"
 	@echo "... src/sprite.s"

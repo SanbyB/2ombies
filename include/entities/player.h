@@ -1,4 +1,4 @@
-#include "sprite.h"
+#include "../sprite.h"
 #include "entity.h"
 #pragma once
 
@@ -8,12 +8,15 @@ class Player: public Entity{
         
         ~Player();
 
+        // get rid
         int count = 0;
 
-        void updt();
+        void update();
 
-
-    private:
+        sf::Sprite getSprite();
         
+    private:
+
+        double scale = 5;
 
 };
