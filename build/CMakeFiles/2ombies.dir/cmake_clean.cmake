@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "2ombies.pdb"
   "CMakeFiles/2ombies.dir/main.cpp.o"
   "CMakeFiles/2ombies.dir/main.cpp.o.d"
+  "CMakeFiles/2ombies.dir/src/Actions.cpp.o"
+  "CMakeFiles/2ombies.dir/src/Actions.cpp.o.d"
   "CMakeFiles/2ombies.dir/src/entities/entity.cpp.o"
   "CMakeFiles/2ombies.dir/src/entities/entity.cpp.o.d"
   "CMakeFiles/2ombies.dir/src/entities/player.cpp.o"

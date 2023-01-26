@@ -7,6 +7,7 @@ main.cpp
 src/sprite.cpp
 src/entities/player.cpp
 src/entities/entity.cpp
+src/Actions.cpp
 )
 
 target_link_libraries (${PROJECT_NAME}

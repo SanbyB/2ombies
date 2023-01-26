@@ -1,30 +1,36 @@
 #include <SFML/Graphics.hpp>
 #include "include/sprite.h"
 #include "include/entities/player.h"
+#include "include/Actions.h"
 #include <iostream>
 
 int main(){
-
+    // remove this
     int count = 0;
 
+    // move to render
+    sf::RenderWindow window(sf::VideoMode(800, 800), "2ombies");
+
+    // mode this to world
     Player player = Player();
+    // move this to a game class (controls everything, world, render, actions, scripting?)
+    Actions actions = Actions(&window);
+
+    // move this to game
+    while (window.isOpen()){
+        // move this to world
+        actions.run();
 
 
-    sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!");
-
-    while (window.isOpen())
-    {
+        // remove this
         count++;
         if(!(count%300)){
             player.update();
         }
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
 
+        std::cout << actions.A() << "\t" << actions.D() << "\t" << actions.W() << "\n";
+
+        // move these to a render class
         window.clear(sf::Color(255,255,255));
         window.draw(player.getSprite());
         window.display();
