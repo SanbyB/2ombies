@@ -14,9 +14,16 @@ class Player: public Entity{
         void update();
 
         sf::Sprite getSprite();
+
+        // if 'direction' is true then the player moves right
+        // if 'direction' is false then the player moves left
+        void moveRight(bool direction);
+
+        // player jumps if touching floor
+        void jump();
         
     private:
 
-        double scale = 5;
+        const double scale = 5;
 
 };

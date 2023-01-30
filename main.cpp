@@ -28,7 +28,7 @@ int main(){
             player.update();
         }
 
-        std::cout << actions.A() << "\t" << actions.D() << "\t" << actions.W() << "\n";
+        std::cout << actions.A() << "\t" << actions.D() << "\t" << actions.SPACE() << "\n";
 
         // move these to a render class
         window.clear(sf::Color(255,255,255));

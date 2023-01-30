@@ -14,7 +14,7 @@ class Actions{
         void Window(sf::Window *w){ window = w; };
 
         bool A(){ return a; }
-        bool W(){ return w; }
+        bool SPACE(){ return space; }
         bool D(){ return d; }
 
     private:
@@ -24,7 +24,7 @@ class Actions{
 
         sf::Event event;
 
-        bool w = false;
+        bool space = false;
         bool a = false;
         bool d = false;
 

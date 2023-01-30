@@ -19,7 +19,7 @@ void Actions::run(){
 void Actions::keyPressed(sf::Event event){
 	if(event.type == sf::Event::KeyPressed){
 		switch (event.key.code){
-		case sf::Keyboard::W : w = true; break;
+		case sf::Keyboard::Space : space = true; break;
 		case sf::Keyboard::A : a = true; break;
 		case sf::Keyboard::D : d = true; break;
 		}
@@ -27,7 +27,7 @@ void Actions::keyPressed(sf::Event event){
 	// key released
 	if(event.type == sf::Event::KeyReleased){
 		switch (event.key.code){
-		case sf::Keyboard::W : w = false ; break;
+		case sf::Keyboard::Space : space = false ; break;
 		case sf::Keyboard::A : a = false ; break;
 		case sf::Keyboard::D : d = false ; break;
 		}

@@ -42,3 +42,57 @@ void Entity::update(int &count){
 void Entity::die(){
     
 }
+
+std::vector<double> Entity::getPos(){
+    return {x, y};
+}
+
+void Entity::applyPhysics(){
+    // Gravity
+    if(!touchingGround){
+        // replace this with gravity constant
+        yVel -= g;
+    }
+    // Friction
+    else{
+        // replace this with friction constant
+        xVel *= mu;
+    }
+    // Movement
+    if(xVel >= maxVelx){
+        xVel = maxVelx;
+    }
+    if(xVel < minVelx){
+        xVel = 0;
+    }
+    if(yVel >= maxVely){
+        yVel = maxVely;
+    }
+    if(yVel < minVely){
+        yVel = 0;
+    }
+    x += xVel;
+    y += yVel;
+    // Collision with ground
+
+    // Collision with wall
+}
+
+void Entity::executive(){
+    if(touchingGround){
+        if(xVel){
+            state = walking;
+        }
+        else{
+            state = breathing;
+        }
+    }
+    else{
+        if(yVel < 0){
+            state = jumping;
+        }
+        else if(yVel > 0){
+            state = falling;
+        }
+    }
+}

@@ -7,6 +7,7 @@
 #include "entities/player.h"
 #include "entities/zombie.h"
 #include "wall.h"
+#include "Actions.h"
 
 
 
@@ -23,4 +24,5 @@ class World{
 
         std::vector<Wall> walls = {}; // Note only load walls when loading terrain, and only render the walls on screen
 
+        Actions actions = Actions();
 };
