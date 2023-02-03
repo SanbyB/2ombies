@@ -3,15 +3,15 @@
 
 class Actions{
     public:
-        Actions(sf::Window* w);
-
-        Actions();
+        Actions(sf::RenderWindow* w);
 
         ~Actions();
 
         void run();
 
-        void Window(sf::Window *w){ window = w; };
+        void Window(sf::RenderWindow *w){ window = w; };
+        
+        sf::RenderWindow* window;
 
         bool A(){ return a; }
         bool SPACE(){ return space; }
@@ -20,7 +20,7 @@ class Actions{
     private:
         void keyPressed(sf::Event event);
 
-        sf::Window* window;
+        
 
         sf::Event event;
 

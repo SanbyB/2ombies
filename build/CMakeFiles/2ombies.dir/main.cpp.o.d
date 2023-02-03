@@ -239,9 +239,12 @@ CMakeFiles/2ombies.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/ben/Desktop/codingProjects/2ombies1/include/sprite.h \
+ /home/ben/Desktop/codingProjects/2ombies1/include/World.h \
  /home/ben/Desktop/codingProjects/2ombies1/include/entities/player.h \
+ /home/ben/Desktop/codingProjects/2ombies1/include/entities/../sprite.h \
  /home/ben/Desktop/codingProjects/2ombies1/include/entities/entity.h \
+ /home/ben/Desktop/codingProjects/2ombies1/include/entities/zombie.h \
+ /home/ben/Desktop/codingProjects/2ombies1/include/wall.h \
  /home/ben/Desktop/codingProjects/2ombies1/include/Actions.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc

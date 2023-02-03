@@ -242,4 +242,6 @@ CMakeFiles/2ombies.dir/src/entities/player.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/ben/Desktop/codingProjects/2ombies1/src/entities/../../include/entities/entity.h
+ /home/ben/Desktop/codingProjects/2ombies1/src/entities/../../include/entities/entity.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc

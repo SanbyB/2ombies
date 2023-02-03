@@ -36,8 +36,8 @@ void Actions::keyPressed(sf::Event event){
 }
 
 
-Actions::Actions(sf::Window* w){
+Actions::Actions(sf::RenderWindow* w){
     window = w;
 }
-Actions::Actions(){}
+
 Actions::~Actions(){}

@@ -177,6 +177,54 @@ src/Actions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Actions.cpp.s
 .PHONY : src/Actions.cpp.s
 
+src/Utils.o: src/Utils.cpp.o
+.PHONY : src/Utils.o
+
+# target to build an object file
+src/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Utils.cpp.o
+.PHONY : src/Utils.cpp.o
+
+src/Utils.i: src/Utils.cpp.i
+.PHONY : src/Utils.i
+
+# target to preprocess a source file
+src/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Utils.cpp.i
+.PHONY : src/Utils.cpp.i
+
+src/Utils.s: src/Utils.cpp.s
+.PHONY : src/Utils.s
+
+# target to generate assembly for a file
+src/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Utils.cpp.s
+.PHONY : src/Utils.cpp.s
+
+src/World.o: src/World.cpp.o
+.PHONY : src/World.o
+
+# target to build an object file
+src/World.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/World.cpp.o
+.PHONY : src/World.cpp.o
+
+src/World.i: src/World.cpp.i
+.PHONY : src/World.i
+
+# target to preprocess a source file
+src/World.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/World.cpp.i
+.PHONY : src/World.cpp.i
+
+src/World.s: src/World.cpp.s
+.PHONY : src/World.s
+
+# target to generate assembly for a file
+src/World.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/World.cpp.s
+.PHONY : src/World.cpp.s
+
 src/entities/entity.o: src/entities/entity.cpp.o
 .PHONY : src/entities/entity.o
 
@@ -225,6 +273,30 @@ src/entities/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/player.cpp.s
 .PHONY : src/entities/player.cpp.s
 
+src/entities/zombie.o: src/entities/zombie.cpp.o
+.PHONY : src/entities/zombie.o
+
+# target to build an object file
+src/entities/zombie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/zombie.cpp.o
+.PHONY : src/entities/zombie.cpp.o
+
+src/entities/zombie.i: src/entities/zombie.cpp.i
+.PHONY : src/entities/zombie.i
+
+# target to preprocess a source file
+src/entities/zombie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/zombie.cpp.i
+.PHONY : src/entities/zombie.cpp.i
+
+src/entities/zombie.s: src/entities/zombie.cpp.s
+.PHONY : src/entities/zombie.s
+
+# target to generate assembly for a file
+src/entities/zombie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/entities/zombie.cpp.s
+.PHONY : src/entities/zombie.cpp.s
+
 src/sprite.o: src/sprite.cpp.o
 .PHONY : src/sprite.o
 
@@ -249,6 +321,30 @@ src/sprite.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/sprite.cpp.s
 .PHONY : src/sprite.cpp.s
 
+src/wall.o: src/wall.cpp.o
+.PHONY : src/wall.o
+
+# target to build an object file
+src/wall.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/wall.cpp.o
+.PHONY : src/wall.cpp.o
+
+src/wall.i: src/wall.cpp.i
+.PHONY : src/wall.i
+
+# target to preprocess a source file
+src/wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/wall.cpp.i
+.PHONY : src/wall.cpp.i
+
+src/wall.s: src/wall.cpp.s
+.PHONY : src/wall.s
+
+# target to generate assembly for a file
+src/wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/wall.cpp.s
+.PHONY : src/wall.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -264,15 +360,27 @@ help:
 	@echo "... src/Actions.o"
 	@echo "... src/Actions.i"
 	@echo "... src/Actions.s"
+	@echo "... src/Utils.o"
+	@echo "... src/Utils.i"
+	@echo "... src/Utils.s"
+	@echo "... src/World.o"
+	@echo "... src/World.i"
+	@echo "... src/World.s"
 	@echo "... src/entities/entity.o"
 	@echo "... src/entities/entity.i"
 	@echo "... src/entities/entity.s"
 	@echo "... src/entities/player.o"
 	@echo "... src/entities/player.i"
 	@echo "... src/entities/player.s"
+	@echo "... src/entities/zombie.o"
+	@echo "... src/entities/zombie.i"
+	@echo "... src/entities/zombie.s"
 	@echo "... src/sprite.o"
 	@echo "... src/sprite.i"
 	@echo "... src/sprite.s"
+	@echo "... src/wall.o"
+	@echo "... src/wall.i"
+	@echo "... src/wall.s"
 .PHONY : help
 
 

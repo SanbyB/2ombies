@@ -13,16 +13,30 @@
 
 class World{
     public:
-        World();
+    
+        World(sf::RenderWindow* w);
 
         ~World();
 
+        void window(sf::RenderWindow* w){ win = w; };
+
+        void run();
+
+        Player* player(){ return &plyr; }
+
     private:
-        Player player = Player(); // Note only render player if on screen
+
+        sf::RenderWindow* win;
+
+        Player plyr = Player(); // Note only render player if on screen
+
+        void controlPlayer();
 
         std::vector<Zombie> zombies = {}; // Note only render Zombies on screen
 
         std::vector<Wall> walls = {}; // Note only load walls when loading terrain, and only render the walls on screen
 
-        Actions actions = Actions();
+
+        // actions should be owned by the game and this should be a pointer/ reference to it
+        Actions actions;
 };

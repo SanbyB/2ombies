@@ -2,6 +2,10 @@
 #include "entity.h"
 #pragma once
 
+const double PLAYER_ACC = 0.02;
+const double PLAYER_VEL = 10;
+const double SCALE = 5;
+
 class Player: public Entity{
     public:
         Player();
@@ -24,6 +28,7 @@ class Player: public Entity{
         
     private:
 
-        const double scale = 5;
+        // make this a global clock
+        int clock = 0;
 
 };

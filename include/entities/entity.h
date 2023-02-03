@@ -14,19 +14,17 @@ class Entity{
         void setSprite(std::string n, std::vector<int> s);
 
         // remove count from this
-        void update(int &count);
+        void update();
 
-
-
-    private:
+    protected:
         // x, y position of entity
         double x = 0, y = 0;
 
         double xVel = 0, yVel = 0;
-        const double maxVelx = 5, maxVely = 20;
-        const double minVelx = 0.001, minVely = 0.001;
+        double maxVelx = 5, maxVely = 20;
+        double minVelx = 0.001, minVely = 0.001;
 
-        // state of the player
+        // state of the entity
         states state = breathing;
 
         // manages states
@@ -35,10 +33,10 @@ class Entity{
         // gravity
         const double g = 0.01;
         // friction
-        const double mu = 0.9;
+        const double mu = 0.8;
 
         // if the entity is in contact with the ground
-        bool touchingGround = false;
+        bool touchingGround = true;
 
         // sprite object for the image of the entity
         Sprite sprite;
@@ -51,5 +49,9 @@ class Entity{
 
         // applies gravity, friction, movement
         void applyPhysics();
+
+    private:
+
+        int count = 0;
 };
 
