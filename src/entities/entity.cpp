@@ -24,22 +24,22 @@ void Entity::update(){
         die();
     }
     // this needs compacting and probably moving to sprite
-    if(count == 0){
-        sprite.Pointer(0, 0);
-        count = 1;
-    }
-    else if(count == 1){
-        sprite.Pointer(1, 0);
-        count = 2;
-    }
-    else if(count == 2){
-        sprite.Pointer(2, 0);
-        count = 3;
-    }
-    else{
-        sprite.Pointer(1, 0);
-        count = 0;
-    }
+    // if(count == 0){
+    //     sprite.Pointer(0, 0);
+    //     count = 1;
+    // }
+    // else if(count == 1){
+    //     sprite.Pointer(1, 0);
+    //     count = 2;
+    // }
+    // else if(count == 2){
+    //     sprite.Pointer(2, 0);
+    //     count = 3;
+    // }
+    // else{
+    //     sprite.Pointer(1, 0);
+    //     count = 0;
+    // }
     applyPhysics();
 }
 
@@ -66,22 +66,12 @@ void Entity::applyPhysics(){
     }
     
     // Movement
-    int xSign = Utils::sign(xVel);
-    int xAbs = abs(xVel);
-    int ySign = Utils::sign(yVel);
-    int yAbs = abs(yVel);
-
-    if(xAbs >= maxVelx){
-        xVel = xSign * maxVelx;
+    if(Utils::abs(xVel) >= maxVelx){
+        
+        xVel = Utils::sign(xVel) * maxVelx;
     }
-    if(xAbs < minVelx){
-        xVel = 0;
-    }
-    if(yAbs >= maxVely){
-        yVel = ySign * maxVely;
-    }
-    if(yAbs < minVely){
-        yVel = 0;
+    if(Utils::abs(yVel) >= maxVely){
+        yVel = Utils::sign(yVel) * maxVely;
     }
     x += xVel;
     y += yVel;

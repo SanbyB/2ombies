@@ -2,9 +2,9 @@
 #include "entity.h"
 #pragma once
 
-const double PLAYER_ACC = 0.02;
-const double PLAYER_VEL = 10;
-const double SCALE = 5;
+const double PLAYER_ACC = 0.001;
+const double PLAYER_VEL = 0.15;
+const double SCALE = 3;
 
 class Player: public Entity{
     public:

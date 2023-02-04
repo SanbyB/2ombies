@@ -1,6 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include "include/World.h"
+#include "include/Clock.h"
 #include <iostream>
+
+Clock c = Clock();
 
 int main(){
     // remove this
@@ -9,7 +12,7 @@ int main(){
     // move to render
     sf::RenderWindow window(sf::VideoMode(800, 800), "2ombies");
 
-    // // mode this to world
+    // // move this to world
     // Player player = Player();
     // // move this to a game class (controls everything, world, render, actions, scripting?)
     // Actions actions = Actions(&window);
@@ -18,13 +21,17 @@ int main(){
 
     // move this to game
     while (window.isOpen()){
+
+        c.run();
+        int64_t elapsed = c.timeElapsed();
+
         // move this to world
         world.run();
 
         // std::cout << actions.A() << "\t" << actions.D() << "\t" << actions.SPACE() << "\n";
 
         // move these to a render class
-        window.clear(sf::Color(255,255,255));
+        window.clear(sf::Color(50,100,255));
         window.draw(world.player()->getSprite());
         window.display();
     }

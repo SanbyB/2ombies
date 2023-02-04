@@ -1,5 +1,7 @@
 #include "../../include/entities/player.h"
+#include "../../include/Clock.h"
 #include <iostream>
+extern Clock c;
 
 
 Player::Player(){
@@ -12,11 +14,7 @@ Player::~Player(){
 }
 
 void Player::update(){
-    clock++;
-    if(!(clock % 300)){
-        Entity::update();
-        std::cout << x << ", " << y << "\n";
-    }
+    Entity::update();
 }
 
 sf::Sprite Player::getSprite(){
@@ -28,6 +26,7 @@ sf::Sprite Player::getSprite(){
 void Player::moveRight(bool direction){
     if(direction){
         xVel += PLAYER_ACC;
+        std::cout << c.timeElapsed() << "\n";
     }
     else{
         xVel -= PLAYER_ACC;

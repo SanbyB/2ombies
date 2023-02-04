@@ -22,7 +22,6 @@ class Entity{
 
         double xVel = 0, yVel = 0;
         double maxVelx = 5, maxVely = 20;
-        double minVelx = 0.001, minVely = 0.001;
 
         // state of the entity
         states state = breathing;
@@ -33,7 +32,7 @@ class Entity{
         // gravity
         const double g = 0.01;
         // friction
-        const double mu = 0.8;
+        const double mu = 0.998;
 
         // if the entity is in contact with the ground
         bool touchingGround = true;
