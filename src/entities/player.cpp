@@ -1,5 +1,4 @@
 #include "../../include/entities/player.h"
-#include "../../include/include.h"
 #include <iostream>
 
 
@@ -24,11 +23,10 @@ sf::Sprite Player::getSprite(){
 
 void Player::moveRight(bool direction){
     if(direction){
-        xVel += PLAYER_ACC;
-        std::cout << CLOCK.timeElapsed() << "\n";
+        xVel += PLAYER_ACC * dt;
     }
     else{
-        xVel -= PLAYER_ACC;
+        xVel -= PLAYER_ACC * dt;
     }
 }
 

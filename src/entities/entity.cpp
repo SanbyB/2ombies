@@ -20,6 +20,8 @@ void Entity::setSprite(std::string n, std::vector<int> s){
 }
 
 void Entity::update(){
+    dt = (double)CLOCK->timeElapsed() / 400;
+    std::cout << dt << "\n";
     if(hp <= 0){
         die();
     }
@@ -67,14 +69,13 @@ void Entity::applyPhysics(){
     
     // Movement
     if(Utils::abs(xVel) >= maxVelx){
-        
-        xVel = Utils::sign(xVel) * maxVelx;
+        xVel = Utils::sign(xVel) * maxVelx * dt;
     }
     if(Utils::abs(yVel) >= maxVely){
-        yVel = Utils::sign(yVel) * maxVely;
+        yVel = Utils::sign(yVel) * maxVely * dt;
     }
-    x += xVel;
-    y += yVel;
+    x += xVel * dt;
+    y += yVel * dt;
 
     // Collision with ground
 

@@ -17,6 +17,8 @@ class Entity{
         void update();
 
     protected:
+        double dt;
+
         // x, y position of entity
         double x = 0, y = 0;
 

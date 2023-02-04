@@ -3,7 +3,9 @@
 #include "include/Clock.h"
 #include <iostream>
 
-Clock CLOCK = Clock();
+Clock c = Clock();
+
+Clock* CLOCK = &c;
 
 int main(){
     // remove this
@@ -22,8 +24,7 @@ int main(){
     // move this to game
     while (window.isOpen()){
 
-        CLOCK.run();
-        int64_t elapsed = CLOCK.timeElapsed();
+        CLOCK->run();
 
         // move this to world
         world.run();

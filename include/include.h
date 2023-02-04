@@ -5,4 +5,4 @@
 
 #include "Clock.h"
 
-extern Clock CLOCK;
+extern Clock* CLOCK;
