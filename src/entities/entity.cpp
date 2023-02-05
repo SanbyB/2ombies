@@ -1,5 +1,6 @@
 #include "../../include/entities/entity.h"
 #include "../../include/Utils.h"
+#include "math.h"
 #include <iostream>
 
 Entity::Entity(){
@@ -62,17 +63,18 @@ void Entity::applyPhysics(){
     }
 
     // Friction
-    else{
-        // replace this with friction constant
-        xVel *= mu;
+    // replace this with friction constant
+    if(xVel){
+        xVel -= mu * xVel * dt;
     }
+    
     
     // Movement
     if(Utils::abs(xVel) >= maxVelx){
-        xVel = Utils::sign(xVel) * maxVelx * dt;
+        xVel = Utils::sign(xVel) * maxVelx;
     }
     if(Utils::abs(yVel) >= maxVely){
-        yVel = Utils::sign(yVel) * maxVely * dt;
+        yVel = Utils::sign(yVel) * maxVely;
     }
     x += xVel * dt;
     y += yVel * dt;

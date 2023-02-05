@@ -6,17 +6,17 @@ class Clock{
         Clock();
 
         ~Clock();
-
+        
+        // returns the time elapsed between last clock cycle
         int64_t timeElapsed();
         
+        // runs the clock
         void run();
 
 
     private:
         sf::Clock clk;
 
-        int64_t dt = 0;
-
-        
+        int64_t dt = 0;        
 
 };

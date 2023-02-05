@@ -34,7 +34,7 @@ class Entity{
         // gravity
         const double g = 0.01;
         // friction
-        const double mu = 0.998;
+        double mu = 0.002;
 
         // if the entity is in contact with the ground
         bool touchingGround = true;
