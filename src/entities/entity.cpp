@@ -21,29 +21,21 @@ void Entity::setSprite(std::string n, std::vector<int> s){
 }
 
 void Entity::update(){
-    dt = (double)CLOCK->timeElapsed() / 400;
-    std::cout << dt << "\n";
+    // TODO make constant
+    dt = (double)CLOCK->timeElapsed() / 500;
+
+    // update the sprite
+    if((CLOCK->count() / 100000) != counter){
+        sprite.update(state);
+    }
+
     if(hp <= 0){
         die();
     }
-    // this needs compacting and probably moving to sprite
-    // if(count == 0){
-    //     sprite.Pointer(0, 0);
-    //     count = 1;
-    // }
-    // else if(count == 1){
-    //     sprite.Pointer(1, 0);
-    //     count = 2;
-    // }
-    // else if(count == 2){
-    //     sprite.Pointer(2, 0);
-    //     count = 3;
-    // }
-    // else{
-    //     sprite.Pointer(1, 0);
-    //     count = 0;
-    // }
     applyPhysics();
+
+    // TODO make constant
+    counter = CLOCK->count() / 100000;
 }
 
 void Entity::die(){

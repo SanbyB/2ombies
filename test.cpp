@@ -5,11 +5,13 @@
 #include <sstream>
 
 
-int num = 5;
-
 int main(){
-    std::cout << 5 << "\n";
-    return 0;
+    uint i = 4294967200;
+
+    while(i){
+        i++;
+        std::cout << i << "\n";
+    }
 }
 
 

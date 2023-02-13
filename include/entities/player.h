@@ -1,4 +1,4 @@
-#include "../sprite.h"
+#include "../Sprite.h"
 #include "entity.h"
 #pragma once
 
@@ -11,9 +11,6 @@ class Player: public Entity{
         Player();
         
         ~Player();
-
-        // get rid
-        int count = 0;
 
         void update();
 

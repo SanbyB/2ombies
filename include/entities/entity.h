@@ -1,4 +1,4 @@
-#include "../sprite.h"
+#include "../Sprite.h"
 #pragma once
 
 enum states { breathing, walking, falling, jumping, attacking };
@@ -13,7 +13,6 @@ class Entity{
         sf::Sprite getSprite();
         void setSprite(std::string n, std::vector<int> s);
 
-        // remove count from this
         void update();
 
     protected:
@@ -53,6 +52,7 @@ class Entity{
 
     private:
 
-        int count = 0;
+        int counter = 0;
+
 };
 

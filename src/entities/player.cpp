@@ -3,7 +3,7 @@
 
 
 Player::Player(){
-    setSprite("player", {3});
+    setSprite("player", {4});
     maxVelx = PLAYER_VEL;
 }
 

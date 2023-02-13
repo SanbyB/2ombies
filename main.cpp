@@ -5,12 +5,10 @@
 
 Clock c = Clock();
 
+// Global pointer to the game clock
 Clock* CLOCK = &c;
 
 int main(){
-    // remove this
-    int count = 0;
-
     // move to render
     sf::RenderWindow window(sf::VideoMode(800, 800), "2ombies");
 
@@ -28,8 +26,6 @@ int main(){
 
         // move this to world
         world.run();
-
-        // std::cout << actions.A() << "\t" << actions.D() << "\t" << actions.SPACE() << "\n";
 
         // move these to a render class
         window.clear(sf::Color(50,100,255));

@@ -1,4 +1,4 @@
-#include "../include/sprite.h"
+#include "../include/Sprite.h"
 #include <iostream>
 
 
@@ -28,6 +28,18 @@ Sprite::Sprite(){}
 
 Sprite::~Sprite(){}
 
+void Sprite::update(int state){
+    if(state >= spriteSheetSize.size()){
+        std::cout << "Sprite state out of range\n";
+        state = 0;
+    }
+    int* x = &pointer.at(0), *y = &pointer.at(1);
+    *y = state;
+    *x += 1;
+    if(*x >= spriteSheetSize.at(*y)){
+        *x = 0;
+    }
+}
 
 sf::Sprite Sprite::image(){
     sf::Sprite s(spriteTexture);

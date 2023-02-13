@@ -6,7 +6,7 @@ add_executable(${PROJECT_NAME}
 main.cpp
 src/World.cpp
 src/Clock.cpp
-src/sprite.cpp
+src/Sprite.cpp
 src/entities/player.cpp
 src/entities/zombie.cpp
 src/entities/entity.cpp
