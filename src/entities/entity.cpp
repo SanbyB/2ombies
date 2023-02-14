@@ -3,6 +3,8 @@
 #include "math.h"
 #include <iostream>
 
+int COUNT_RATE = 300000;
+
 Entity::Entity(){
 }
 
@@ -21,21 +23,20 @@ void Entity::setSprite(std::string n, std::vector<int> s){
 }
 
 void Entity::update(){
+    
     // TODO make constant
     dt = (double)CLOCK->timeElapsed() / 500;
 
-    // update the sprite
-    if((CLOCK->count() / 100000) != counter){
-        sprite.update(state);
-    }
+    executive();
+    updateSprite();
+    applyPhysics();
 
     if(hp <= 0){
         die();
     }
-    applyPhysics();
-
+    
     // TODO make constant
-    counter = CLOCK->count() / 100000;
+    counter = CLOCK->count() / COUNT_RATE;
 }
 
 void Entity::die(){
@@ -71,6 +72,13 @@ void Entity::applyPhysics(){
     x += xVel * dt;
     y += yVel * dt;
 
+    if(xVel > 0){
+        direction = -1;
+    }
+    if(xVel < 0){
+        direction = 1;
+    }
+
     // Collision with ground
 
     // Collision with wall
@@ -78,7 +86,7 @@ void Entity::applyPhysics(){
 
 void Entity::executive(){
     if(touchingGround){
-        if(xVel){
+        if(abs(xVel) > minVelx){
             state = walking;
         }
         else{
@@ -92,5 +100,12 @@ void Entity::executive(){
         else if(yVel > 0){
             state = falling;
         }
+    }
+}
+
+void Entity::updateSprite(){
+    // update the sprite
+    if((CLOCK->count() / COUNT_RATE) != counter){
+        sprite.update(state);
     }
 }

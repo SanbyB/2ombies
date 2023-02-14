@@ -23,6 +23,7 @@ class Entity{
 
         double xVel = 0, yVel = 0;
         double maxVelx = 5, maxVely = 20;
+        double minVelx = 0.005, minVely = 0.005;
 
         // state of the entity
         states state = breathing;
@@ -49,6 +50,12 @@ class Entity{
 
         // applies gravity, friction, movement
         void applyPhysics();
+
+        
+        void updateSprite();
+
+        // used as scaling factor for flipping sprite img
+        int direction = 1;
 
     private:
 

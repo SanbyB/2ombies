@@ -3,7 +3,7 @@
 
 
 Player::Player(){
-    setSprite("player", {4});
+    setSprite("player", {2, 4});
     maxVelx = PLAYER_VEL;
 }
 
@@ -17,7 +17,10 @@ void Player::update(){
 
 sf::Sprite Player::getSprite(){
     sf::Sprite s = Entity::getSprite();
-    s.scale(SCALE, SCALE);
+    s.scale(direction * SCALE, SCALE);
+    if(direction < 0){
+        s.setPosition(x + sprite.ImgSize()[0] * SCALE, y);
+    }
     return s;
 }
 
