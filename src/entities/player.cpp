@@ -19,7 +19,7 @@ sf::Sprite Player::getSprite(){
     sf::Sprite s = Entity::getSprite();
     s.scale(direction * SCALE, SCALE);
     if(direction < 0){
-        s.setPosition(x + sprite.ImgSize()[0] * SCALE, y);
+        s.setPosition(sprite.ImgSize()[0] * SCALE, y);
     }
     return s;
 }

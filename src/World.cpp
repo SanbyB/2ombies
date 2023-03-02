@@ -12,6 +12,7 @@ void World::run(){
     actions.run();
     controlPlayer();
     plyr.update();
+    updateCamera();
 }
 
 void World::controlPlayer(){
@@ -42,6 +43,25 @@ void World::render(){
     bg3.scale(800.0 / 512.0, 800.0 / 512.0);
     sf::Sprite bg4 = Background4.image();
     bg4.scale(800.0 / 512.0, 800.0 / 512.0);
+
+    sf::IntRect rec;
+    rec.width = 800;
+    rec.height = 800;
+    std::vector<int> camPos = cam.getPos();
+    rec.left = camPos.at(0);
+    rec.top = camPos.at(1);
+    bg1.setTextureRect(rec);
+    rec.left *= 1.1;
+    bg2.setTextureRect(rec);
+    rec.left *= 1.2;
+    bg3.setTextureRect(rec);
+    rec.left *= 1.3;
+    bg4.setTextureRect(rec);
+
+    // bg1.scale(2.56, 2.56);
+    // bg2.scale(2.56, 2.56);
+    // bg3.scale(2.56, 2.56);
+    // bg4.scale(2.56, 2.56);   
 
     win->clear(sf::Color(50,100,255));
         

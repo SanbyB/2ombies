@@ -14,7 +14,7 @@ Entity::~Entity(){
 
 sf::Sprite Entity::getSprite(){
     sf::Sprite s = sprite.image();
-    s.setPosition(x, y);
+    // s.setPosition(x, y);
     return s;
 }
 
