@@ -12,6 +12,8 @@ int main(){
     // move to render
     sf::RenderWindow window(sf::VideoMode(800, 800), "2ombies");
 
+    window.clear();
+
     // // move this to world
     // Player player = Player();
     // // move this to a game class (controls everything, world, render, actions, scripting?)
@@ -24,13 +26,8 @@ int main(){
 
         CLOCK->run();
 
-        // move this to world
         world.run();
-
-        // move these to a render class
-        window.clear(sf::Color(50,100,255));
-        window.draw(world.player()->getSprite());
-        window.display();
+        world.render();
     }
 
     return 0;

@@ -23,7 +23,7 @@ class Entity{
 
         double xVel = 0, yVel = 0;
         double maxVelx = 5, maxVely = 20;
-        double minVelx = 0.005, minVely = 0.005;
+        double minVelx = 0.1, minVely = 0.005;
 
         // state of the entity
         states state = breathing;

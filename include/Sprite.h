@@ -45,16 +45,18 @@ class Sprite{
         std::vector<int> SpriteSheetSize();
 
 
-    private:
+    protected:
 
         std::string name;
         
-        // size of each image in pixels
-        std::vector<uint> imgSize;
-
         // size of sprite sheet, each entry to the
         // vector is how many images there are per line
         std::vector<int> spriteSheetSize;
+
+    private:
+        
+        // size of each image in pixels
+        std::vector<uint> imgSize;
 
         // the image from the graphics folder
         sf::Texture spriteTexture;

@@ -61,14 +61,12 @@ std::vector<int> Sprite::Pointer(){
     return pointer;
 }
 
-// REMOVE THESE, done automatically in constructor
 void Sprite::ImgSize(uint x, uint y){
     imgSize = {x, y};
 }
 std::vector<uint> Sprite::ImgSize(){
     return imgSize;
 }
-//
 
 std::string Sprite::Name(){
     return name;
