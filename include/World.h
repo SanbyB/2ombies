@@ -10,7 +10,7 @@
 #include "wall.h"
 #include "Actions.h"
 #include "Camera.h"
-// #include "Background.h"
+#include "Background.h"
 
 
 class World{
@@ -52,10 +52,10 @@ class World{
         void updateCamera();
 
         // change these to background objects
-        Sprite Background0 = Sprite("back0", {1});
-        Sprite Background1 = Sprite("back1", {1});
-        Sprite Background2 = Sprite("back2", {1});
-        Sprite Background3 = Sprite("back3", {1});
-        Sprite Background4 = Sprite("back4", {1});
+        Background Background0 = Background("back0", 0);
+        Background Background1 = Background("back1", 1);
+        Background Background2 = Background("back2", 1.1);
+        Background Background3 = Background("back3", 1.2);
+        Background Background4 = Background("back4", 1.3);
         
 };

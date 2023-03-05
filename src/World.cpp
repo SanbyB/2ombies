@@ -34,15 +34,18 @@ void World::updateCamera(){
 
 void World::render(){
     sf::Sprite bg0 = Background0.image();
-    bg0.scale(800.0 / 256.0, 800.0 / 256.0);
+    double winX = win->getSize().x;
+    double winY = win->getSize().y;
+
+    bg0.scale(winX / Background0.ImgSize().at(0), winY / Background0.ImgSize().at(1));
     sf::Sprite bg1 = Background1.image();
-    bg1.scale(800.0 / 512.0, 800.0 / 512.0);
+    bg1.scale(winX / Background1.ImgSize().at(0), winY / Background1.ImgSize().at(1));
     sf::Sprite bg2 = Background2.image();
-    bg2.scale(800.0 / 512.0, 800.0 / 512.0);
+    bg2.scale(winX / Background2.ImgSize().at(0), winY / Background2.ImgSize().at(1));
     sf::Sprite bg3 = Background3.image();
-    bg3.scale(800.0 / 512.0, 800.0 / 512.0);
+    bg3.scale(winX / Background3.ImgSize().at(0), winY / Background3.ImgSize().at(1));
     sf::Sprite bg4 = Background4.image();
-    bg4.scale(800.0 / 512.0, 800.0 / 512.0);
+    bg4.scale(winX / Background4.ImgSize().at(0), winY / Background4.ImgSize().at(1));
 
     sf::IntRect rec;
     rec.width = 800;
