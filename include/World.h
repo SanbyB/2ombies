@@ -11,6 +11,7 @@
 #include "Actions.h"
 #include "Camera.h"
 #include "Background.h"
+#include "Utils.h"
 
 
 class World{
@@ -57,5 +58,17 @@ class World{
         Background Background2 = Background("back2", 1.1);
         Background Background3 = Background("back3", 1.2);
         Background Background4 = Background("back4", 1.3);
-        
+
+        sf::Sprite bg0;
+        sf::Sprite bg01;
+        sf::Sprite bg1;
+        sf::Sprite bg02;
+        sf::Sprite bg2;
+        sf::Sprite bg03;
+        sf::Sprite bg3;
+        sf::Sprite bg04;
+        sf::Sprite bg4;
+        sf::Sprite bg05;
+        sf::Sprite bg5;
+
 };

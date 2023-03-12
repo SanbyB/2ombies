@@ -3,7 +3,7 @@
 #pragma once
 
 const double PLAYER_ACC = 0.001;
-const double PLAYER_VEL = 0.15;
+const double PLAYER_VEL = 0.1;
 const double SCALE = 2;
 
 class Player: public Entity{
