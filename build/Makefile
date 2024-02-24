@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Actions.o: src/Actions.cpp.o
+.PHONY : src/Actions.o
+
+# target to build an object file
+src/Actions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Actions.cpp.o
+.PHONY : src/Actions.cpp.o
+
+src/Actions.i: src/Actions.cpp.i
+.PHONY : src/Actions.i
+
+# target to preprocess a source file
+src/Actions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Actions.cpp.i
+.PHONY : src/Actions.cpp.i
+
+src/Actions.s: src/Actions.cpp.s
+.PHONY : src/Actions.s
+
+# target to generate assembly for a file
+src/Actions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Actions.cpp.s
+.PHONY : src/Actions.cpp.s
+
 src/Message.o: src/Message.cpp.o
 .PHONY : src/Message.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Actions.o"
+	@echo "... src/Actions.i"
+	@echo "... src/Actions.s"
 	@echo "... src/Message.o"
 	@echo "... src/Message.i"
 	@echo "... src/Message.s"

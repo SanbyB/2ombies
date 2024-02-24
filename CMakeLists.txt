@@ -7,6 +7,8 @@ project(2ombies)
 add_executable(${PROJECT_NAME}
 main.cpp
 src/Message.cpp
+src/Actions.cpp
+include/Utils.h
 include/Messages.h
 )
 

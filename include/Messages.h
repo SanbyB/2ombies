@@ -7,6 +7,7 @@ enum MessageIDs{
     KEYPRESS
 };
 
+namespace MESSAGE{
 
 class TestMessage : public Message {
 public:
@@ -23,5 +24,8 @@ public:
     ~KeyPress(){};
     
     char key;
+    // pressed or released
     bool pressed = true;
 };
+// closing namespace
+}

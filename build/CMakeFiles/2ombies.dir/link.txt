@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/2ombies.dir/main.cpp.o CMakeFiles/2ombies.dir/src/Message.cpp.o -o 2ombies  -lsfml-graphics -lsfml-window -lsfml-system 
+/usr/bin/c++ CMakeFiles/2ombies.dir/main.cpp.o CMakeFiles/2ombies.dir/src/Message.cpp.o CMakeFiles/2ombies.dir/src/Actions.cpp.o -o 2ombies  -lsfml-graphics -lsfml-window -lsfml-system 
