@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
   "2ombies"
   "2ombies.pdb"
-  "CMakeFiles/2ombies.dir/test/Message.cpp.o"
-  "CMakeFiles/2ombies.dir/test/Message.cpp.o.d"
+  "CMakeFiles/2ombies.dir/main.cpp.o"
+  "CMakeFiles/2ombies.dir/main.cpp.o.d"
+  "CMakeFiles/2ombies.dir/src/Message.cpp.o"
+  "CMakeFiles/2ombies.dir/src/Message.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -69,31 +69,47 @@ include CMakeFiles/2ombies.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/2ombies.dir/flags.make
 
-CMakeFiles/2ombies.dir/test/Message.cpp.o: CMakeFiles/2ombies.dir/flags.make
-CMakeFiles/2ombies.dir/test/Message.cpp.o: ../test/Message.cpp
-CMakeFiles/2ombies.dir/test/Message.cpp.o: CMakeFiles/2ombies.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ben/Desktop/codingProjects/2ombies/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/2ombies.dir/test/Message.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2ombies.dir/test/Message.cpp.o -MF CMakeFiles/2ombies.dir/test/Message.cpp.o.d -o CMakeFiles/2ombies.dir/test/Message.cpp.o -c /home/ben/Desktop/codingProjects/2ombies/test/Message.cpp
+CMakeFiles/2ombies.dir/main.cpp.o: CMakeFiles/2ombies.dir/flags.make
+CMakeFiles/2ombies.dir/main.cpp.o: ../main.cpp
+CMakeFiles/2ombies.dir/main.cpp.o: CMakeFiles/2ombies.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ben/Desktop/codingProjects/2ombies/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/2ombies.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2ombies.dir/main.cpp.o -MF CMakeFiles/2ombies.dir/main.cpp.o.d -o CMakeFiles/2ombies.dir/main.cpp.o -c /home/ben/Desktop/codingProjects/2ombies/main.cpp
 
-CMakeFiles/2ombies.dir/test/Message.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2ombies.dir/test/Message.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ben/Desktop/codingProjects/2ombies/test/Message.cpp > CMakeFiles/2ombies.dir/test/Message.cpp.i
+CMakeFiles/2ombies.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2ombies.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ben/Desktop/codingProjects/2ombies/main.cpp > CMakeFiles/2ombies.dir/main.cpp.i
 
-CMakeFiles/2ombies.dir/test/Message.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2ombies.dir/test/Message.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ben/Desktop/codingProjects/2ombies/test/Message.cpp -o CMakeFiles/2ombies.dir/test/Message.cpp.s
+CMakeFiles/2ombies.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2ombies.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ben/Desktop/codingProjects/2ombies/main.cpp -o CMakeFiles/2ombies.dir/main.cpp.s
+
+CMakeFiles/2ombies.dir/src/Message.cpp.o: CMakeFiles/2ombies.dir/flags.make
+CMakeFiles/2ombies.dir/src/Message.cpp.o: ../src/Message.cpp
+CMakeFiles/2ombies.dir/src/Message.cpp.o: CMakeFiles/2ombies.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ben/Desktop/codingProjects/2ombies/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/2ombies.dir/src/Message.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2ombies.dir/src/Message.cpp.o -MF CMakeFiles/2ombies.dir/src/Message.cpp.o.d -o CMakeFiles/2ombies.dir/src/Message.cpp.o -c /home/ben/Desktop/codingProjects/2ombies/src/Message.cpp
+
+CMakeFiles/2ombies.dir/src/Message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2ombies.dir/src/Message.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ben/Desktop/codingProjects/2ombies/src/Message.cpp > CMakeFiles/2ombies.dir/src/Message.cpp.i
+
+CMakeFiles/2ombies.dir/src/Message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2ombies.dir/src/Message.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ben/Desktop/codingProjects/2ombies/src/Message.cpp -o CMakeFiles/2ombies.dir/src/Message.cpp.s
 
 # Object files for target 2ombies
 2ombies_OBJECTS = \
-"CMakeFiles/2ombies.dir/test/Message.cpp.o"
+"CMakeFiles/2ombies.dir/main.cpp.o" \
+"CMakeFiles/2ombies.dir/src/Message.cpp.o"
 
 # External object files for target 2ombies
 2ombies_EXTERNAL_OBJECTS =
 
-2ombies: CMakeFiles/2ombies.dir/test/Message.cpp.o
+2ombies: CMakeFiles/2ombies.dir/main.cpp.o
+2ombies: CMakeFiles/2ombies.dir/src/Message.cpp.o
 2ombies: CMakeFiles/2ombies.dir/build.make
 2ombies: CMakeFiles/2ombies.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ben/Desktop/codingProjects/2ombies/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 2ombies"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ben/Desktop/codingProjects/2ombies/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable 2ombies"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/2ombies.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

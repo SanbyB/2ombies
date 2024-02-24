@@ -129,29 +129,53 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/build
 .PHONY : 2ombies/fast
 
-test/Message.o: test/Message.cpp.o
-.PHONY : test/Message.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-test/Message.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/test/Message.cpp.o
-.PHONY : test/Message.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-test/Message.i: test/Message.cpp.i
-.PHONY : test/Message.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-test/Message.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/test/Message.cpp.i
-.PHONY : test/Message.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-test/Message.s: test/Message.cpp.s
-.PHONY : test/Message.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-test/Message.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/test/Message.cpp.s
-.PHONY : test/Message.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/Message.o: src/Message.cpp.o
+.PHONY : src/Message.o
+
+# target to build an object file
+src/Message.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Message.cpp.o
+.PHONY : src/Message.cpp.o
+
+src/Message.i: src/Message.cpp.i
+.PHONY : src/Message.i
+
+# target to preprocess a source file
+src/Message.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Message.cpp.i
+.PHONY : src/Message.cpp.i
+
+src/Message.s: src/Message.cpp.s
+.PHONY : src/Message.s
+
+# target to generate assembly for a file
+src/Message.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2ombies.dir/build.make CMakeFiles/2ombies.dir/src/Message.cpp.s
+.PHONY : src/Message.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 2ombies"
-	@echo "... test/Message.o"
-	@echo "... test/Message.i"
-	@echo "... test/Message.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/Message.o"
+	@echo "... src/Message.i"
+	@echo "... src/Message.s"
 .PHONY : help
 
 

@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.10.2)
 project(2ombies)
 
 add_executable(${PROJECT_NAME}
-test/Message.cpp
-include/Message.h
+main.cpp
+src/Message.cpp
 include/Messages.h
 )
 

@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ben/Desktop/codingProjects/2ombies/test/Message.cpp" "CMakeFiles/2ombies.dir/test/Message.cpp.o" "gcc" "CMakeFiles/2ombies.dir/test/Message.cpp.o.d"
+  "/home/ben/Desktop/codingProjects/2ombies/main.cpp" "CMakeFiles/2ombies.dir/main.cpp.o" "gcc" "CMakeFiles/2ombies.dir/main.cpp.o.d"
+  "/home/ben/Desktop/codingProjects/2ombies/src/Message.cpp" "CMakeFiles/2ombies.dir/src/Message.cpp.o" "gcc" "CMakeFiles/2ombies.dir/src/Message.cpp.o.d"
   )
 
 # Targets to which this target links.
