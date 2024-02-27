@@ -20,7 +20,7 @@ void MessageBus::run(){
         for(auto c : consumers){
             std::set<int> ids = c->getIds();
             // if the consumer consumes the given message id, call the deliver function
-            if(ids.count(m->id)){
+            if(ids.count(m->ID())){
                 c->deliver(m);
             }
         }

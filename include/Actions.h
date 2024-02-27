@@ -19,9 +19,13 @@ class Actions : public MessageProducer{
 
     private:
         // called in the run function to determine keypresses
-        void keyPressed(sf::Event event);
+        void keyPressed();
 
         sf::Event event;
 
-        std::map<int, char> keyMap;
+        // map from sf::Keyboard enum to related char
+        std::map<char, sf::Keyboard::Key> keyMap;
+
+        // map of chars that are pressed or not
+        std::map<char, bool> keys;
 };

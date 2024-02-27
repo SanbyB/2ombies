@@ -7,30 +7,40 @@ void Actions::run(std::shared_ptr<Run> r){
 		if(!r->running){ continue; }
 		// close window
 		if (event.type == sf::Event::Closed){
-			std::cout << "close\n";
-			// window->close();
 			r->running = false;
-			// return;
 		}
-		keyPressed(event);
+		keyPressed();
 	}
 }
 
 
-void Actions::keyPressed(sf::Event event){
-	// key pressed
-	if(event.type == sf::Event::KeyPressed){
-		std::shared_ptr<MESSAGE::KeyPress> k = std::make_shared<MESSAGE::KeyPress>();
-		k->key = keyMap[event.key.code];
-		k->pressed = true;
-		emit(k);
-	}
-	// key released
-	if(event.type == sf::Event::KeyReleased){
-		std::shared_ptr<MESSAGE::KeyPress> k = std::make_shared<MESSAGE::KeyPress>();
-		k->key = keyMap[event.key.code];
-		k->pressed = false;
-		emit(k);
+void Actions::keyPressed(){
+
+	std::shared_ptr<MESSAGE::KeyPress> k = std::make_shared<MESSAGE::KeyPress>();
+
+	for(auto it = keys.begin(); it != keys.end(); it++){
+		// if the key is pressed check if it's been released
+		if(keys[it->first]){
+			// if the key is released
+			if(!sf::Keyboard::isKeyPressed(keyMap[it->first])){
+				// emit key released message
+				k->key = it->first;
+				k->pressed = false;
+				keys[it->first] = false;
+				emit(k);
+			}
+		}
+		// if the key is not pressed check if it's been pressed
+		else{
+			// if the key is pressed
+			if(sf::Keyboard::isKeyPressed(keyMap[it->first])){
+				// emit key pressed message
+				k->key = it->first;
+				k->pressed = true;
+				keys[it->first] = true;
+				emit(k);
+			}
+		}
 	}
 
 }
@@ -38,9 +48,14 @@ void Actions::keyPressed(sf::Event event){
 
 Actions::Actions(sf::RenderWindow* w){
     window = w;
-	keyMap[sf::Keyboard::Space] = ' ';
-	keyMap[sf::Keyboard::A] = 'a';
-	keyMap[sf::Keyboard::D] = 'd';
-	keyMap[sf::Keyboard::W] = 'w';
-	keyMap[sf::Keyboard::S] = 's';
+	keyMap[' '] = sf::Keyboard::Space;
+	keyMap['a'] = sf::Keyboard::A;
+	keyMap['d'] = sf::Keyboard::D;
+	keyMap['w'] = sf::Keyboard::W;
+	keyMap['s'] = sf::Keyboard::S;
+
+	// init all the keys pressed to false
+	for (auto it = keyMap.begin(); it != keyMap.end(); it++){
+		keys[it->first] = false;
+	}
 }

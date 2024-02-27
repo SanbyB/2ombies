@@ -5,6 +5,8 @@
 
 class Message{
 public:
+    int ID(){ return id; };
+protected:
     // unique message identifier
     int id = 0;
 };

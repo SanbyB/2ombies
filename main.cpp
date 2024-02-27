@@ -12,7 +12,7 @@ public:
     }
 
     void deliver(std::shared_ptr<Message> m){
-        if(m->id == MessageIDs::KEYPRESS){
+        if(m->ID() == MessageIDs::KEYPRESS){
             std::shared_ptr<MESSAGE::KeyPress> t = std::static_pointer_cast<MESSAGE::KeyPress>(m);
             std::cout << "Message received with data: " << t->key << ", " << t->pressed << "\n";
         }
@@ -33,8 +33,8 @@ int main(){
     RUN->running = true;
     while (RUN->running && window.isOpen()){
         MESSAGEBUS->run();
-        // std::cout << isRunning << "\n";
     }
+    // the above while loop will end when RUN->running = false, at which point close the window
     window.close();
     return 0;
 }
