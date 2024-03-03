@@ -4,6 +4,7 @@
 #include "include/Actions.h"
 #include "include/Utils.h"
 #include "include/Sprite.h"
+#include "include/Entities/Player.h"
 #include <thread>
 
 class Test : public MessageConsumer{
@@ -22,17 +23,22 @@ public:
 
 int main(){
     std::shared_ptr<Test> t = std::make_shared<Test>();
-    Sprite sp = Sprite("Viking", {4});
     Actions a = Actions(win);
+    std::shared_ptr<Player> p = std::make_shared<Player>();
 
     MESSAGEBUS->connect(t);
+    MESSAGEBUS->connect(p);
 
     RUN->running = true;
     while(RUN->running){
         MESSAGEBUS->run();
         a.run();
+        p->update();
+        std::cout << "pos: " << p->position().vec().at(0) << ", " << p->position().vec().at(1) << "\n";
+        std::cout << "vel: " << p->velocity().vec().at(0) << ", " << p->velocity().vec().at(1) << "\n";
+        std::cout << "acc: " << p->acceleration().vec().at(0) << ", " << p->acceleration().vec().at(1) << "\n";
         win->clear();
-        win->draw(sp.image());
+        win->draw(p->getSprite()->image());
         win->display();
     }
     // the above while loop will end when RUN->running = false, at which point close the window

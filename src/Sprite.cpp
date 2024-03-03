@@ -27,8 +27,9 @@ Sprite::Sprite(std::string n, std::vector<int> s){
 }
 
 void Sprite::update(int state){
+    std::cout << "state: " << state << "\n";
     if(state >= spriteSheetSize.size()){
-        std::cout << "Sprite state out of range\n";
+        std::cout << "Sprite state out of range " << state << " >= " << spriteSheetSize.size() << "\n";
         state = 0;
     }
     int* x = &pointer.at(0), *y = &pointer.at(1);
@@ -64,6 +65,10 @@ void Sprite::ImgSize(uint x, uint y){
 }
 std::vector<uint> Sprite::ImgSize(){
     return imgSize;
+}
+
+void Sprite::Name(std::string s){
+    name = s;
 }
 
 std::string Sprite::Name(){
