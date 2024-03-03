@@ -7,15 +7,15 @@
 
 class Actions : public MessageProducer{
     public:
-        Actions(sf::RenderWindow* w);
+        Actions(std::shared_ptr<sf::RenderWindow> w);
 
-        // CALLED IN A SEPARATE THREAD, constantly updates the keys that are pressed
-        void run(std::shared_ptr<Run> r);
+        // updates the keys that are pressed, called each game tick as a poll
+        void run();
 
-        void Window(sf::RenderWindow *w){ window = w; };
+        void Window(std::shared_ptr<sf::RenderWindow> w){ window = w; };
         
         // window that the game is run in
-        sf::RenderWindow* window;
+        std::shared_ptr<sf::RenderWindow> window;
 
     private:
         // called in the run function to determine keypresses

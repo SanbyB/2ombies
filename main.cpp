@@ -3,6 +3,7 @@
 #include "include/Messages.h"
 #include "include/Actions.h"
 #include "include/Utils.h"
+#include "include/Sprite.h"
 #include <thread>
 
 class Test : public MessageConsumer{
@@ -21,20 +22,20 @@ public:
 
 int main(){
     std::shared_ptr<Test> t = std::make_shared<Test>();
+    Sprite sp = Sprite("Viking", {4});
+    Actions a = Actions(win);
+
     MESSAGEBUS->connect(t);
 
-    sf::RenderWindow window(sf::VideoMode(800, 800), "2ombies");
-    window.clear();
-
-    Actions a = Actions(&window);
-    std::thread keyThread(&Actions::run, &a, RUN);
-    keyThread.detach();
-
     RUN->running = true;
-    while (RUN->running && window.isOpen()){
+    while(RUN->running){
         MESSAGEBUS->run();
+        a.run();
+        win->clear();
+        win->draw(sp.image());
+        win->display();
     }
     // the above while loop will end when RUN->running = false, at which point close the window
-    window.close();
+    win->close();
     return 0;
 }

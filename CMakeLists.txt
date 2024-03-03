@@ -8,6 +8,7 @@ add_executable(${PROJECT_NAME}
 main.cpp
 src/Message.cpp
 src/Actions.cpp
+src/Sprite.cpp
 include/Utils.h
 include/Messages.h
 )
@@ -16,4 +17,5 @@ target_link_libraries (${PROJECT_NAME}
 	sfml-graphics
 	sfml-window
 	sfml-system
+	-lX11
 )

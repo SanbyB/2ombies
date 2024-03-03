@@ -2,14 +2,16 @@
 #include <iostream>
 
 
-void Actions::run(std::shared_ptr<Run> r){
-    while(window->waitEvent(event)){
-		if(!r->running){ continue; }
-		// close window
-		if (event.type == sf::Event::Closed){
-			r->running = false;
+void Actions::run(){
+    if(RUN->running){
+		if(window->pollEvent(event)){
+			if(!RUN->running){ return; }
+			// close window
+			if (event.type == sf::Event::Closed){
+				RUN->running = false;
+			}
+			keyPressed();
 		}
-		keyPressed();
 	}
 }
 
@@ -46,7 +48,7 @@ void Actions::keyPressed(){
 }
 
 
-Actions::Actions(sf::RenderWindow* w){
+Actions::Actions(std::shared_ptr<sf::RenderWindow> w){
     window = w;
 	keyMap[' '] = sf::Keyboard::Space;
 	keyMap['a'] = sf::Keyboard::A;
