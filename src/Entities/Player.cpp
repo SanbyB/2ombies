@@ -3,11 +3,12 @@
 // make configurable
 double runThreshold = 10;
 double walkThreshold = 5;
+int COUNT_RATE = 100000;
 
 Player::Player(){
     ids.insert(MessageIDs::KEYPRESS);
-    std::vector<int> spriteSheet = {8};
-    sprite = std::make_shared<Sprite>(std::string("Viking"), spriteSheet);
+    std::vector<int> spriteSheet = {9};
+    sprite = std::make_shared<Sprite>(std::string("vikingAttack"), spriteSheet);
 
 }
 
@@ -25,7 +26,12 @@ void Player::update(){
         std::cout << "[Player] sprite not set\n";
         return;
     }
-    sprite->update(state);
+    if((CLOCK->count() / COUNT_RATE) != counter){
+        sprite->update(state);
+    }
+    counter = CLOCK->count() / COUNT_RATE;
+    
+    
 }
 
 void Player::updateState(){

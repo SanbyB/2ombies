@@ -31,12 +31,10 @@ int main(){
 
     RUN->running = true;
     while(RUN->running){
+        CLOCK->run();
         MESSAGEBUS->run();
         a.run();
         p->update();
-        std::cout << "pos: " << p->position().vec().at(0) << ", " << p->position().vec().at(1) << "\n";
-        std::cout << "vel: " << p->velocity().vec().at(0) << ", " << p->velocity().vec().at(1) << "\n";
-        std::cout << "acc: " << p->acceleration().vec().at(0) << ", " << p->acceleration().vec().at(1) << "\n";
         win->clear();
         win->draw(p->getSprite()->image());
         win->display();

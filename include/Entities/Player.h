@@ -24,4 +24,6 @@ private:
     int state = STATE::IDLE;
 
     void updateState();
+
+    int counter;
 };

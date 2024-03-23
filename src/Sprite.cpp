@@ -27,7 +27,6 @@ Sprite::Sprite(std::string n, std::vector<int> s){
 }
 
 void Sprite::update(int state){
-    std::cout << "state: " << state << "\n";
     if(state >= spriteSheetSize.size()){
         std::cout << "Sprite state out of range " << state << " >= " << spriteSheetSize.size() << "\n";
         state = 0;

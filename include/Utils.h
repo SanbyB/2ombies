@@ -1,6 +1,7 @@
 #pragma once
 #include <memory>
 #include <cmath>
+#include "Clock.h"
 
 class Run{
 public:
@@ -71,3 +72,4 @@ private:
 
 inline std::shared_ptr<Run> RUN = std::make_shared<Run>();
 inline std::shared_ptr<sf::RenderWindow> win = std::make_shared<sf::RenderWindow>(sf::VideoMode(800, 800), "2ombies");
+inline std::shared_ptr<Clock> CLOCK = std::make_shared<Clock>();

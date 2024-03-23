@@ -10,7 +10,7 @@ src/Message.cpp
 src/Actions.cpp
 src/Sprite.cpp
 include/Utils.h
-# src/Vector.cpp
+src/Clock.cpp
 src/Entities/Entity.cpp
 src/Entities/Player.cpp
 include/Messages.h
